@@ -1,0 +1,36 @@
+{
+  "name": "core",
+  "version": "0.0.1",
+  "description": "this is http server by Nodejs!",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c ./configs/rollup.config.dev.js",
+    "build:prod": "rollup -c ./configs/rollup.config.prod.js",
+    "pulish": "npm run build",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalcells/core.git"
+  },
+  "keywords": [
+    "network",
+    "server",
+    "node",
+    "digitalcells"
+  ],
+  "author": "zhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalcells/core/issues"
+  },
+  "homepage": "https://github.com/digitalcells/core#readme",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "rollup": "^1.27.14",
+    "rollup-plugin-delete": "^1.1.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
+  }
+}
